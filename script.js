@@ -24,13 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Typing effect
+  document.addEventListener('DOMContentLoaded', () => {
   const typingTarget = document.getElementById('typing-intro');
   const phrases = [
-    "Software Developerr",
-    "AI/ML Enthusiastt",
-    "Data Scientistt",
-    "Full-Stack Engineerr",
-    "Tech Explorerr"
+    "Software Developer",
+    "AI/ML Enthusiast",
+    "Data Scientist",
+    "Full-Stack Engineer",
+    "Tech Explorer"
   ];
   let phraseIndex = 0;
   let charIndex = 0;
@@ -57,3 +58,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   type();
 });
+  
