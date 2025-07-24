@@ -19,6 +19,23 @@ header {
 .header-left {
   display: flex;
   align-items: center;
+  .header-left {
+  display: flex;
+  flex-wrap: wrap; /* enables wrapping if needed */
+  align-items: center;
+  gap: 20px;
+  }
+  .intro-text {
+  flex: 1;
+  min-width: 200px;
+  }
+  #typing-intro {
+  font-size: 1.2rem;
+  color: #2980b9;
+  font-weight: bold;
+  padding-top: 8px;
+  }
+  
 }
 
 .profile-pic img {
