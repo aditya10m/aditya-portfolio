@@ -19,19 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('dark-mode');
   });
 
-  document.querySelectorAll('.project img').forEach((img, index) => {
-    img.src = projectIcons[index % projectIcons.length];
-  });
-
   // Typing effect
-  document.addEventListener('DOMContentLoaded', () => {
   const typingTarget = document.getElementById('typing-intro');
   const phrases = [
-    "Software Developer",
-    "AI/ML Enthusiast",
-    "Data Scientist",
-    "Full-Stack Engineer",
-    "Tech Explorer"
+    "Software Developerr",
+    "AI/ML Enthusiastt",
+    "Data Scientistt",
+    "Full-Stack Engineerr",
+    "Tech Explorerr"
   ];
   let phraseIndex = 0;
   let charIndex = 0;
@@ -46,16 +41,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!isDeleting && charIndex === currentPhrase.length) {
       isDeleting = true;
-      setTimeout(type, 1000);
+      setTimeout(type, 1500);
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
       phraseIndex = (phraseIndex + 1) % phrases.length;
       setTimeout(type, 500);
     } else {
-      setTimeout(type, isDeleting ? 50 : 100);
+      setTimeout(type, isDeleting ? 100 : 150);
     }
   }
 
   type();
 });
-  
+
